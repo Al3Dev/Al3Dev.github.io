@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/proyects.css">
+
+    <style>
+        
+        .container {
+            max-width: 100%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .project {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .project img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+        }
+
+        .category-buttons {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .category-buttons button {
+            padding: 10px 20px;
+            margin: 0 5px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            background-color: #000000;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .category-buttons button:hover {
+            background-color: #474747;
+        }
+
+    </style>
+    <title>proyects</title>
+
+</head>
+<body>
+    <header>
+        <div class="cubo">
+                <div class="sticky">
+                    <div class="LOGO-1">AlleDev</div>
+                    <div class="cubo-2">
+                        <a href="index.html" class="up">HOME</a>
+                        <a href="creative.html" class="up">CREATIVE</a>
+                        <a href="proyects.html" class="up">PROJECTS</a>
+                        <a href="info.html" class="up">INFO</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+    <div style="text-align:center;">
+        <h2>Welcome to My Proyects</h2>
+        <p>Here are some of my amazing works of my career</p>
+      </div>
+
+      <div class="category-buttons">
+        <button class="category-button active" data-category="all">All</button>
+        <button class="category-button" data-category="web">Web</button>
+        <button class="category-button" data-category="app">App</button>
+        <button class="category-button" data-category="programs">Programs</button>
+        <button class="category-button" data-category="animation">Animation</button>
+        <button class="category-button" data-category="external-web">External Web</button>
+    </div>
+
+    <div class="container">
+        
+        <div class="project web"><h2 class="project-title">My WebSite</h2>
+            <p class="project-description">This is my official page that has everything about me.</p>
+            <a href="https://alejandrorlas.github.io/"><img class="project-image" src="image/MiWebPage.png" alt="Project 1 image"></a>
+        </div>  
+              
+        
+        <div class="project web">
+            <h2 class="project-title">Dragon Ball Fan Page</h2>
+            <p class="project-description">This page is an attribute to the creator of Dragon Ball and also has his characters</p>
+            <a href="http://fandragonballpage.atwebpages.com/index.html"><img class="project-image" src="image/Goku.png" alt="Project 1 image"></a>
+        </div>
+
+        <div class="project programs">
+            <h2 class="project-title">AppMechaInnovate</h2>
+            <p class="project-description">This app web is created whit vite and react and is a proyect name pait </p>
+            <a href="http://fandragonballpage.atwebpages.com/index.html"><img class="project-image" src="image/appmecha.png" alt="Project 1 image"></a>
+        </div>
+
+        <div class="project programs">
+            <h2 class="project-title">Dog Check-Up</h2>
+            <p class="project-description">This program is for either an animal professional to check them and verify data</p>
+            <a href="http://fandragonballpage.atwebpages.com/index.html"><img class="project-image" src="image/JProgram2.png" alt="Project 1 image"></a>
+        </div>
+
+        <div class="project external-web">
+            <h2 class="project-title">My Art</h2>
+            <p class="project-description">This page has my art and my feelings.</p>
+            <a href="https://alejandrorlas.github.io/"><img class="project-image" src="image/ArtStation.png" alt="Project 1 image"></a>
+        </div>        
+        
+        <div class="project animation">
+            <h2 class="project-title">Iook at me im free</h2>
+            <p class="project-description">This video is a project I did in the times of covid 19 that was very old but also helped me to forget the person I loved</p>
+            <a href="http://fandragonballpage.atwebpages.com/index.html"><img class="project-image" src="image/ImHappy.png" alt="Project 1 image"></a>
+        </div>
+
+        <div class="project animation">
+            <h2 class="project-title">Fredome dive</h2>
+            <p class="project-description">This animation is made with pain that I had because I loved someone and suffered every day 2017-2019.</p>
+            <a href="https://alejandrorlas.github.io/"><img class="project-image" src="image/LetMeFreeVid.png" alt="Project 1 image"></a>
+        </div>        
+        
+        <div class="project external-web">
+            <h2 class="project-title">My music</h2>
+            <p class="project-description">This page is where I distribute my music</p>
+            <a href="http://fandragonballpage.atwebpages.com/index.html"><img class="project-image" src="image/Spotify-me.png" alt="Project 1 image"></a>
+        </div>
+
+        <div class="project programs">
+            <h2 class="project-title">Menu  Maker Pro</h2>
+            <p class="project-description">This program has many utilities that can work for you to help with a specific task.</p>
+            <a href="http://fandragonballpage.atwebpages.com/index.html"><img class="project-image" src="image/CLenguaje.png" alt="Project 1 image"></a>
+        </div>
+
+        <div class="project app">
+            <h2 class="project-title">UNK</h2>
+            <p class="project-description">Coming Soon</p>
+            <a href="http://fandragonballpage.atwebpages.com/index.html"><img class="project-image" src="image/Arduino.jpg" alt="Project 1 image"></a>
+        </div>
+
+        <div class="project app">
+            <h2 class="project-title">Fly Out VideoGame</h2>
+            <p class="project-description">ComingSoon</p>
+            <a href="http://fandragonballpage.atwebpages.com/index.html"><img class="project-image" src="image/FlyOut.jpg" alt="Project 1 image"></a>
+        </div>
+
+        <div class="project animation">
+            <h2 class="project-title">SkyRocket</h2>
+            <p class="project-description">Comingsoon</p>
+            <a href="http://fandragonballpage.atwebpages.com/index.html"><img class="project-image" src="image/SkyRocket.jpg" alt="Project 1 image"></a>
+        </div>
+
+        <div class="project app">
+            <h2 class="project-title">App Waz</h2>
+            <p class="project-description">ComingSoon</p>
+            <a href="http://fandragonballpage.atwebpages.com/index.html"><img class="project-image" src="image/Waz.jpg" alt="Project 1 image"></a>
+        </div>
+
+       <div class="project external-web">
+            <h2 class="project-title">My Videos</h2>
+            <p class="project-description">This page has my videos and video projects.</p>
+            <a href="http://fandragonballpage.atwebpages.com/index.html"><img class="project-image" src="image/youtube.png" alt="Project 1 image"></a>
+        </div> 
+
+        <div class="project animation">
+            <h2 class="project-title">Im Gone</h2>
+            <p class="project-description">This video is the video that was going to implement a lot of things, whether it's 3D, 2D, and reality and others. but it was cancelled due to school issues.</p>
+            <a href="http://fandragonballpage.atwebpages.com/index.html"><img class="project-image" src="image/imgone.png" alt="Project 1 image"></a>
+        </div> 
+
+        <div class="project animation">
+            <h2 class="project-title">Rainbow Road</h2>
+            <p class="project-description">This animation was cancelled due to school issues..</p>
+            <a href="http://fandragonballpage.atwebpages.com/index.html"><img class="project-image" src="image/rainbow-road.png" alt="Project 1 image"></a>
+        </div> 
+
+        <!-- Agrega los otros proyectos con las clases correspondientes -->
+
+    </div>
+
+
+    <script>
+                document.querySelectorAll('.category-button').forEach(function(button) {
+            button.addEventListener('click', function() {
+                var category = this.getAttribute('data-category');
+                var projects = document.querySelectorAll('.project');
+
+                projects.forEach(function(project) {
+                    if (category === 'all' || project.classList.contains(category)) {
+                        project.style.display = 'block';
+                    } else {
+                        project.style.display = 'none';
+                    }
+                });
+
+                document.querySelectorAll('.category-button').forEach(function(btn) {
+                    btn.classList.remove('active');
+                });
+
+                this.classList.add('active');
+            });
+        });
+    </script>
+
+
+      
+
+
+
+    <footer class="decoration-of-licencia">
+        <p>@licencia de Alejandro Rodriguez Lopez</p>
+    </footer>
+
+    
+</body>
+</html>
