@@ -60,11 +60,6 @@ body{
     }
 }
 
-
-
-
-
-
 .cubo-3{
     position: relative;
     height: 40vw;
@@ -100,6 +95,11 @@ body{
     top:30px;
     
 
+}
+
+.margindirectionWelcome{
+    margin-top: 20vw;
+    margin-bottom: 14vw;
 }
 
 .clip-1{
