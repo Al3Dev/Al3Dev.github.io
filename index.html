@@ -392,6 +392,25 @@
       font-size: 2rem;
     }
   }
+
+  .decoration-of-licencia {
+            text-align: center;
+            font-family: Arial, sans-serif; /* Fuente de letra normal */
+            background-color: #000000; /* Fondo suave */
+            box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+            width: 100%;
+            bottom: 0;
+        }
+        .decoration-of-licencia p {
+            margin: 0;
+        }
+        .decoration-of-licencia a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .decoration-of-licencia a:hover {
+            text-decoration: underline;
+        }
 </style>
 </head>
 <body>
@@ -532,24 +551,7 @@
 
 
 
-<section class="collaborations-section">
-    <h2>Colaboraciones</h2>
-    <div class="collaborations-content">
-        <div class="collaboration-item">
-            <img src="/IMGP/polimatutelogo.png" alt="Empresa 1" class="collaboration-image">
-            <p>Colaboración con Empresa 1</p>
-        </div>
-        <div class="collaboration-item">
-            <img src="/IMGP/Mau.JPG" alt="Empresa 2" class="collaboration-image">
-            <p>Colaboración con Empresa 2</p>
-        </div>
-        <div class="collaboration-item">
-            <img src="/colaboraciones/empresa3.png" alt="Empresa 3" class="collaboration-image">
-            <p>Colaboración con Empresa 3</p>
-        </div>
-        <!-- Añade más colaboraciones según sea necesario -->
-    </div>
-</section>
+
 
 
 <div class="minimalist-section-2">
@@ -564,75 +566,11 @@
 </div>
 
 
-
-       <div class="container mt-5">
-    <div class="row">
-      <div class="col-12 text-center">
-        <img id="mainImage" src="image/appmecha.png" class="main-image" alt="Imagen Principal">
-        <div class="d-flex justify-content-between mt-3">
-        </div>
-      </div>
-    </div>
-    <div class="row mt-4">
-      <div class="col-12">
-        <div class="thumbnail-container">
-          <img src="image/2.jpg" class="thumbnail" alt="Miniatura 1">
-          <img src="/image/Arduino.jpg" class="thumbnail" alt="Miniatura 2">
-          <img src="/image/CLenguaje.png" class="thumbnail" alt="Miniatura 3">
-          <img src="/image/FlyOut.jpg" class="thumbnail" alt="Miniatura 4">
-          <img src="/image/IMG_4568.jpeg" class="thumbnail" alt="Miniatura 5">
-          <img src="/ImgPoli/6.jpg" class="thumbnail" alt="Miniatura 6">
-          <img src="/ImgPoli/7.jpg" class="thumbnail" alt="Miniatura 7">
-          <img src="/ImgPoli/8.jpg" class="thumbnail" alt="Miniatura 8">
-          <img src="/ImgPoli/9.jpg" class="thumbnail" alt="Miniatura 9">
-          <img src="/ImgPoli/10.jpg" class="thumbnail" alt="Miniatura 10">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script>
-    const mainImage = document.getElementById('mainImage');
-    const thumbnails = document.querySelectorAll('.thumbnail');
-    const images = [
-      '/ImgPoli/1.jpg',
-      '/ImgPoli/2.jpg',
-      '/ImgPoli/3.jpg',
-      '/ImgPoli/4.jpg',
-      '/ImgPoli/5.jpg',
-      '/ImgPoli/6.jpg',
-      '/ImgPoli/7.jpg',
-      '/ImgPoli/8.jpg',
-      '/ImgPoli/9.jpg',
-      '/ImgPoli/10.jpg'
-    ];
-    let currentIndex = 0;
-
-    thumbnails.forEach((thumbnail, index) => {
-      thumbnail.addEventListener('click', () => {
-        mainImage.src = images[index];
-        currentIndex = index;
-      });
-    });
-
-    document.getElementById('prevBtn').addEventListener('click', () => {
-      currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
-      mainImage.src = images[currentIndex];
-    });
-
-    document.getElementById('nextBtn').addEventListener('click', () => {
-      currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
-      mainImage.src = images[currentIndex];
-    });
-  </script>
+<footer class="decoration-of-licencia">
+    <p>@licencia de <a href="https://www.ejemplo.com" target="_blank">AlleRoDi</a></p>
+</footer>
 
 
-    <footer class="decoration-of-licencia">
-        <p>@licencia de Alejandro Rodriguez Lopez</p>
-    </footer>
-    <aside>
-
-    </aside>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
