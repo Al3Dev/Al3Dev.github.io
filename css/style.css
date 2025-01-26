@@ -3,17 +3,12 @@ body{
 } 
 
 
-
 .image-of-me{
     position: absolute;
     top: 50%;
 }
 
 .cubo{
-    
-    height: auto;
-    width: 100%;
-    border-radius: 20px;
 
 }
 
@@ -24,12 +19,10 @@ body{
     float: right;
     transition: 200ms;
     font-size: 23px;
-
 }
 
 .up:hover{
     font-size: 27px;
-    
 }
 
 .cubo-2{
@@ -71,19 +64,20 @@ body{
 
 .cubo-3{
     position: relative;
-    height: 40vw;
+    height: 46vw;
     width: 100%;
-    top:-0vw ;
-
+    top: 7vw;
 }
 
 .imagen1{
     position: absolute;
     height: 100%;
     width: 100%;
-    z-index:-1;
+    z-index: -1;
     object-fit: cover;
     object-fit: center;
+    top: 50%; /* Add this line */
+    transform: translateY(-50%); /* Add this line */
 }
 
 @media(max-width:480px){
@@ -139,11 +133,6 @@ box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
     top: 30px;
 
 }
-
-
-
-
-
 
 
 
@@ -203,34 +192,27 @@ box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
     text-align: center;
     position: relative;
     top: 10vw;
-    animation-name: AlleStudio;
-    animation-duration: 2s;
-
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); /* Add text shadow for better visibility */
 }
-
 
 @media(max-width:480px){
     .text-AlleStudio{
         font-size:60px;
         top: 90px;
-        
-        animation: none;
+        left: 50%;
     }
 
     .Update-game{
         width: 100%;
         border-radius: 1vw;
-        
-    
     }
 
     .decoration-of-licencia p{
         font-size: 3.5vw;
-        
     }
-
 }
-
 
 @keyframes AlleStudio {
     0%{font-size: 100px;}
@@ -350,7 +332,6 @@ box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
 }
 
 
-
 .minimalist-section {
     display: flex;
     flex-direction: row;
@@ -358,23 +339,27 @@ box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
     justify-content: center;
     margin: 2rem auto;
     padding: 1rem;
-    width: 75vw;
+    width: 85vw;
+    top: -20px; /* Move the section up by 20 pixels */
 }
 
 .minimalist-image {
     max-width: 40%;
     height: auto;
-    border-radius: 10px;
     margin-right: 2rem;
+    box-shadow: 1px 19px 20px rgba(0, 0, 0, 0.2); /* Add box shadow */
 }
 
 .minimalist-text {
-    max-width: 50%;
+    max-width: 80%;
     text-align: left;
     color: #333;
     font-size: 1.5rem;
     line-height: 1.6;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Popular font */
+    font-family: 'Arial', sans-serif; /* Popular font */
+    color: #333; /* Darker text color */
+    font-size: 1.5rem; /* Adjusted font size */
+    line-height: 1.6; /* Adjusted line height */
 }
 
 @media (max-width: 768px) {
