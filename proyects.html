@@ -130,7 +130,46 @@
             font-size: 2.5vw;
         }
 }
+
+
     </style>
+
+<style>
+    /* Asegúrate de que el navbar siempre sea visible */
+    .navbar {
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-toggler {
+      border: none;
+    }
+
+    .navbar-toggler-icon {
+      background-color: #000; /* Color negro para el ícono del menú */
+      width: 30px;
+      height: 3px;
+      display: block;
+      position: relative;
+    }
+
+    .navbar-toggler-icon::before,
+    .navbar-toggler-icon::after {
+      content: '';
+      width: 30px;
+      height: 3px;
+      background-color: #000;
+      display: block;
+      position: absolute;
+    }
+
+    .navbar-toggler-icon::before {
+      top: -8px;
+    }
+
+    .navbar-toggler-icon::after {
+      top: 8px;
+    }
+  </style>
     <title>proyects</title>
 
 </head>
@@ -138,30 +177,32 @@
     <header>
         <div class="cubo">
             <!-- Navbar -->
-            <nav id="navbar" class="navbar navbar-expand-lg navbar-white bg-white fixed-top">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="/index.html">AlleRoDi</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                      <li class="nav-item">
-                        <a class="nav-link" href="/index.html">Inicio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="/info.html">Acerca de</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="/proyects.html">Proyectos</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="/creative.html">Crativo</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
+        <!-- Navbar -->
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">AlleRoDi</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/info.html">Acerca de</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/proyects.html">Proyectos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/creative.html">Creativo</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          
 
             </div>
         </div>
@@ -172,9 +213,14 @@
         
             window.onscroll = function () {
               const currentScrollPos = window.pageYOffset;
-              if (prevScrollpos > currentScrollPos) {
+              if (currentScrollPos <= 0) {
+                // Siempre muestra el navbar al estar al principio de la página
+                navbar.style.top = "0";
+              } else if (prevScrollpos > currentScrollPos) {
+                // Muestra el navbar al hacer scroll hacia arriba
                 navbar.style.top = "0";
               } else {
+                // Esconde el navbar al hacer scroll hacia abajo
                 navbar.style.top = "-70px";
               }
               prevScrollpos = currentScrollPos;
@@ -329,9 +375,8 @@
         });
     </script>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 
     <footer class="decoration-of-licencia">
         <p>@licencia de Alejandro Rodriguez Lopez</p>
