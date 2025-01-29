@@ -450,6 +450,72 @@
       top: 8px;
     }
   </style>
+
+  <style>
+     /* Estilo para el carrusel */
+     .carousel-inner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Asegura que la imagen cubra todo el área sin distorsionarse */
+    }
+
+    .carousel-item {
+      text-align: center;
+    }
+
+    /* Opcional: agregar una sombra al carrusel */
+    .carousel {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Agregar bordes redondeados */
+    .carousel-inner {
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    /* Estilo del contenedor para centrar el carrusel */
+    .carousel-container {
+      display: flex;
+      justify-content: center; /* Centra el carrusel horizontalmente */
+      align-items: center; /* Centra el carrusel verticalmente */
+      height: 400px; /* Ajusta la altura del contenedor */
+    }
+
+    .carousel {
+      width: 80%; /* Ajusta el tamaño del carrusel */
+      max-width: 700px; /* Tamaño máximo */
+    }
+  </style>
+
+<style>
+    /* Contenedor para los cuadros */
+    .container {
+      display: flex;
+      justify-content: center; /* Alinea los cuadros al centro */
+      gap: 20px; /* Espacio entre los cuadros */
+      padding: 20px;
+    }
+
+    /* Estilo de cada cuadro con imagen */
+    .square {
+      width: 200px; /* Ancho del cuadro */
+      height: 200px; /* Alto del cuadro */
+      background-color: #ccc; /* Fondo de respaldo en caso de que no haya imagen */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra de los cuadros */
+      border-radius: 10px; /* Bordes redondeados */
+      overflow: hidden; /* Recorta la imagen que sobrepase el borde del cuadrado */
+    }
+
+    /* Estilo de las imágenes */
+    .square img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Asegura que la imagen llene el cuadro sin distorsionarse */
+    }
+  </style>
+
+
 </head>
 <body>
 
@@ -513,6 +579,7 @@
         </div>
       </div>
         
+      
 
         <div class="minimalist-section">
             <img class="minimalist-image" src="image/yo3.jpg" alt="Minimalist Image">
@@ -581,13 +648,39 @@
     </div>
   </section>
 
+  <div class="minimalist-section-2">
+    <img class="minimalist-image-2" src="/personaje/Fotos.png" alt="Minimalist Image">
+    <div class="minimalist-text-2">
+        <p>Aquí te muestro algunos de mis trabajos fotográficos. Cada imagen refleja una parte de mi estilo y enfoque en la fotografía.
+        </p>
+        <div class="button-container">
+            <button class="minimalist-button">Ver más</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="square">
+      <img src="/image/IMG_4568.jpeg" alt="Imagen 1">
+    </div>
+    <div class="square">
+      <img src="/image/ImHappy.png" alt="Imagen 2">
+    </div>
+    <div class="square">
+      <img src="/image/aledev-asset.jpg" alt="Imagen 3">
+    </div>
+  </div>
+
 
 
   <!-- Minimalist Section 2 -->
   <div class="minimalist-section-2">
     <img class="minimalist-image-2" src="/personaje/Proyectos.png" alt="Minimalist Image">
     <div class="minimalist-text-2">
-      <p>Soy Alejandro, artista, diseñador gráfico y programador apasionado por crear experiencias visuales y digitales. Combino creatividad y tecnología para desarrollar diseños únicos, páginas web, aplicaciones y videojuegos. Mi objetivo es dar vida a ideas innovadoras y conectar con las personas a través del arte y la funcionalidad.</p>
+      <p>Estoy desarrollando aplicaciones innovadoras como MatchMake, utilizo inteligencia artificial. Además, trabajo en un videojuego interactivo con poderes misteriosos, buscando siempre ofrecer experiencias únicas.
+
+        Mi interés por la inteligencia artificial me lleva a integrarla en cada proyecto. Desde recomendaciones inteligentes hasta interfaces interactivas, la IA permite personalizar y optimizar la experiencia del usuario, haciendo que mis aplicaciones sean más eficientes y atractivas. Estoy emocionado por explorar cómo la IA puede mejorar la funcionalidad y la interacción en el futuro de mis creaciones.</p>
       <div class="button-container">
         <button class="minimalist-button">Ver más</button>
       </div>
@@ -595,20 +688,6 @@
   </div>
 
 
-
-
-
-
-<div class="minimalist-section-2">
-    <img class="minimalist-image-2" src="/personaje/Proyectos.png" alt="Minimalist Image">
-    <div class="minimalist-text-2">
-        <p>Estoy trabajando en la creación de música, especialmente en géneros como el disco y el Happy Hardcore, pero quiero llevar esto más allá. Mi objetivo es explorar nuevos sonidos, mezclar estilos y encontrar una identidad única en mis composiciones. Me apasiona experimentar con sintetizadores, efectos y diferentes técnicas de producción para crear algo fresco y emocionante.
-        </p>
-        <div class="button-container">
-            <button class="minimalist-button">Ver más</button>
-        </div>
-    </div>
-</div>
 
 
 <footer class="decoration-of-licencia">
