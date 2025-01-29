@@ -1,702 +1,425 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fuentes de Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/style.css">
     <title>HOME</title>
-    
     <style>
-
-        
-
-.minimalist-section-2 {
-    display: flex;
-    flex-direction: row-reverse; /* Invertir el orden de los elementos */
-    align-items: center;
-    justify-content: center;
-    margin: 2rem auto;
-    padding: 1rem;
-    width: 75vw;
-
-
-}
-
-.minimalist-image-2 {
-    max-width: 50%;
-    height: auto;
-    margin-left: 1rem; /* Ajustar margen para separar la imagen del texto */
-}
-
-.minimalist-text-2 {
-    max-width: 50%;
-    text-align: left; /* Alinear el texto a la izquierda */
-    color: #333; /* Color de texto más oscuro */
-    font-size: 1.5rem; /* Tamaño de fuente más grande para monitores */
-    line-height: 1.6; /* Altura de línea para mejor legibilidad */
-    margin: 0; /* Eliminar márgenes adicionales */
-    font-family: 'Arial', sans-serif; /* Popular font */
-}
-
-.button-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-}
-
-.minimalist-button {
-    background-color: transparent;
-    border: 2px solid #333;
-    color: #333;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.minimalist-button:hover {
-    background-color: #333;
-    color: #fff;
-}
-
-@media (max-width: 768px) {
-    .minimalist-section-2 {
-        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
-        width: 90vw; /* Ajustar ancho */
-    }
-
-    .minimalist-image-2 {
-        max-width: 100%; /* Ajustar ancho de la imagen */
-        margin: 0 0 1rem 0; /* Espaciado abajo */
-    }
-
-    .minimalist-text-2 {
-        max-width: 100%; /* Ajustar ancho del texto */
-        font-size: 1.2rem; /* Ajustar tamaño de fuente para pantallas pequeñas */
-    }
-}
-
-@media (max-width: 480px) {
-    .minimalist-section-2 {
-        width: 100vw; /* Ajustar ancho para pantallas muy pequeñas */
-        padding: 0.5rem;
-    }
-
-    .minimalist-text-2 {
-        font-size: 1rem; /* Ajustar tamaño de fuente para pantallas muy pequeñas */
-        
-    }
-}
-    </style>
-
-    <style>
-
-
-/* Contenedor principal */
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Imagen principal */
-.main-image {
-    max-width: 100%;
-    height: auto;
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Agrega sombra al cuadro */
-}
-
-/* Botones de navegación */
-.btn {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.btn-primary {
-    background-color: #007bff;
-    color: white;
-}
-
-.btn-primary:hover {
-    background-color: #0056b3;
-}
-
-/* Contenedor de miniaturas */
-.thumbnail-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-}
-
-.thumbnail {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: transform 0.2s;
-}
-
-.thumbnail:hover {
-    transform: scale(1.1);
-}
-
-
-    </style>
-
-<style> /* Video */
-    
-    .cuadro {
-        width: 1200px; /* Ancho del cuadro */
-        height: 200px; /* Alto del cuadro */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden; /* Para recortar la imagen que se salga */
-        margin: 50px auto; /* Centrar el cuadro en la página */
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Agrega sombra al cuadro */
-    }
-
-    /* Estilos para la imagen */
-    .cuadro img {
-        width: 100%; /* Ajusta la imagen al tamaño del cuadro */
-        height: 100%; /* Ajusta la imagen al tamaño del cuadro */
-        object-fit: cover; /* Recorta la imagen para llenar el cuadro */
-    }
-</style>
-
-
-<style>
-
- 
-
-.info-section-reverse .container {
-    max-width: 1200px;
-}
-
-.info-section-reverse .info-content {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.info-section-reverse .info-content img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.info-section-reverse h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    color: #333333;
-}
-
-.info-section-reverse p {
-    font-size: 16px;
-    color: #666666;
-}
-
-.info-section-reverse .btn-llamativo {
-    background-color: #000000;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.info-section-reverse .btn-llamativo:hover {
-    background-color: #6f6f6f;
-}
-</style>
-
-
-<style> 
-    /* Estilos para el contenedor principal */ 
-    .content-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 2rem auto;
-    padding: 1rem;
-    width: 75vw;
-}
-
-.info {
-    max-width: 45%;
-    text-align: left;
-    color: #333;
-    font-size: 1.5rem;
-    line-height: 1.6;
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-}
-
-.video {
-    max-width: 50%;
-}
-
-@media (max-width: 768px) {
-    .content-container {
-        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
-        width: 90vw; /* Ajustar ancho */
-    }
-
-    .info, .video {
-        max-width: 100%; /* Ajustar ancho */
-        margin-bottom: 1rem; /* Espaciado entre elementos */
-    }
-
-    .video iframe {
-        width: 100%; /* Ajustar ancho del iframe */
-        height: auto; /* Ajustar altura del iframe */
-    }
-}
-
-
-</style>
-
-
-<style> /* Estilos para la sección de colaboraciones */
-.collaborations-section {
-    text-align: center;
-    padding: 2rem 1rem;
-
-    margin: 2rem auto;
-    width: 75vw;
-
-    border-radius: 10px; /* Bordes redondeados */
-}
-
-.collaborations-section h2 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 1.5rem;
-    font-family: 'Arial', sans-serif; /* Popular font */
-    position: relative;
-}
-
-.collaborations-section h2::after {
-    content: '';
-    width: 50px;
-    height: 4px;
-    background-color: #333;
-    display: block;
-    margin: 0.5rem auto 0;
-    border-radius: 2px;
-}
-
-.collaborations-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.collaboration-item {
-    max-width: 200px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.collaboration-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.collaboration-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-    margin-bottom: 0.5rem;
-}
-
-.collaboration-item p {
-    font-size: 1rem;
-    color: #333;
-    margin: 0;
-    font-family: 'Arial', sans-serif; /* Popular font */
-}
-
-@media (max-width: 768px) {
-    .collaborations-section {
-        width: 90vw; /* Ajustar ancho */
-    }
-
-    .collaboration-item {
-        max-width: 100%; /* Ajustar ancho */
-    }
-}
-</style>
-
-<style>
-
-.navbar {
-      transition: top 0.3s;
-    }
-
-
-
-    .header-container {
-    position: relative;
-    width: 100%;
-    height: 90vh; /* Cambia esto para ajustar el alto según lo necesites */
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.header-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Asegura que la imagen se recorte de manera proporcionada */
-    object-position: center; /* Centra la imagen dentro del contenedor */
-}
-
-.name-overlay {
-    position: absolute;
-    color: white;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-    text-align: center;
-}
-
-.name-overlay h1 {
-    font-size: 10em;
-    margin: 0;
-}
-
-@media (max-width: 768px) {
-    .header-container {
-        height: 90vh; /* Ajusta para que ocupe toda la pantalla en dispositivos móviles */
-    }
-
-    .name-overlay h1 {
-        font-size: 4rem;
-    }
-}
-
-  .decoration-of-licencia {
-            text-align: center;
-            font-family: Arial, sans-serif; /* Fuente de letra normal */
-            background-color: #000000; /* Fondo suave */
-            box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-            width: 100%;
-            bottom: 0;
+        :root {
+            --primary-color: #333;
+            --secondary-color: #6f6f6f;
+            --background-color: #f9f9f9;
+            --text-color: #333;
+            --hover-color: #555;
+            --font-primary: 'Montserrat', sans-serif; /* Fuente principal */
+            --font-secondary: 'Roboto', sans-serif; /* Fuente secundaria */
         }
+
+        body {
+            font-family: var(--font-secondary);
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-primary);
+            font-weight: 700; /* Negrita para títulos */
+        }
+
+        .navbar {
+            font-family: var(--font-primary);
+            font-weight: 500; /* Semi-negrita para el menú */
+            transition: top 0.3s;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-container {
+            position: relative;
+            width: 100%;
+            height: 90vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .name-overlay {
+            position: absolute;
+            color: white;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+
+        .name-overlay h1 {
+            font-size: 10em;
+            margin: 0;
+            font-family: var(--font-primary);
+            font-weight: 700;
+        }
+
+        .minimalist-section, .minimalist-section-2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 2rem auto;
+            padding: 1rem;
+            width: 75vw;
+        }
+
+        .minimalist-section-2 {
+            flex-direction: row-reverse;
+        }
+
+        .minimalist-image, .minimalist-image-2 {
+            max-width: 50%;
+            height: auto;
+            margin: 0 1rem;
+            border-radius: 10px;
+        }
+
+        .minimalist-text, .minimalist-text-2 {
+            max-width: 50%;
+            text-align: left;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            font-family: var(--font-secondary);
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        .minimalist-button {
+            background-color: transparent;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+            font-family: var(--font-primary);
+            font-weight: 500;
+        }
+
+        .minimalist-button:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .info-section-reverse .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .info-section-reverse .info-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .info-section-reverse .info-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .info-section-reverse h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+            font-family: var(--font-primary);
+            font-weight: 700;
+        }
+
+        .info-section-reverse p {
+            font-size: 16px;
+            color: var(--secondary-color);
+            font-family: var(--font-secondary);
+        }
+
+        .info-section-reverse .btn-llamativo {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            font-family: var(--font-primary);
+            font-weight: 500;
+        }
+
+        .info-section-reverse .btn-llamativo:hover {
+            background-color: var(--hover-color);
+        }
+
+        .collaborations-section {
+            text-align: center;
+            padding: 2rem 1rem;
+            margin: 2rem auto;
+            width: 75vw;
+            border-radius: 10px;
+        }
+
+        .collaborations-section h2 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            position: relative;
+            font-family: var(--font-primary);
+            font-weight: 700;
+        }
+
+        .collaborations-section h2::after {
+            content: '';
+            width: 50px;
+            height: 4px;
+            background-color: var(--primary-color);
+            display: block;
+            margin: 0.5rem auto 0;
+            border-radius: 2px;
+        }
+
+        .collaborations-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .collaboration-item {
+            max-width: 200px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .collaboration-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .collaboration-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 0.5rem;
+        }
+
+        .collaboration-item p {
+            font-size: 1rem;
+            color: var(--primary-color);
+            margin: 0;
+            font-family: var(--font-secondary);
+        }
+
+        .decoration-of-licencia {
+            text-align: center;
+            font-family: var(--font-primary);
+            background-color: var(--primary-color);
+            box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            padding: 1rem 0;
+        }
+
         .decoration-of-licencia p {
             margin: 0;
+            color: white;
         }
+
         .decoration-of-licencia a {
-            color: #ffffff;
+            color: white;
             text-decoration: none;
         }
+
         .decoration-of-licencia a:hover {
             text-decoration: underline;
         }
-</style>
 
+        @media (max-width: 768px) {
+            .header-container {
+                height: 90vh;
+            }
 
-<style>
-    /* Asegúrate de que el navbar siempre sea visible */
-    .navbar {
-      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    }
+            .name-overlay h1 {
+                font-size: 4rem;
+            }
 
-    .navbar-toggler {
-      border: none;
-    }
+            .minimalist-section, .minimalist-section-2 {
+                flex-direction: column;
+                width: 90vw;
+            }
 
-    .navbar-toggler-icon {
-      background-color: #000; /* Color negro para el ícono del menú */
-      width: 30px;
-      height: 3px;
-      display: block;
-      position: relative;
-    }
+            .minimalist-image, .minimalist-image-2 {
+                max-width: 100%;
+                margin: 0 0 1rem 0;
+            }
 
-    .navbar-toggler-icon::before,
-    .navbar-toggler-icon::after {
-      content: '';
-      width: 30px;
-      height: 3px;
-      background-color: #000;
-      display: block;
-      position: absolute;
-    }
+            .minimalist-text, .minimalist-text-2 {
+                max-width: 100%;
+                font-size: 1rem;
+            }
 
-    .navbar-toggler-icon::before {
-      top: -8px;
-    }
+            .collaborations-section {
+                width: 90vw;
+            }
 
-    .navbar-toggler-icon::after {
-      top: 8px;
-    }
-  </style>
-
-  <style>
-     /* Estilo para el carrusel */
-     .carousel-inner img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; /* Asegura que la imagen cubra todo el área sin distorsionarse */
-    }
-
-    .carousel-item {
-      text-align: center;
-    }
-
-    /* Opcional: agregar una sombra al carrusel */
-    .carousel {
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    /* Agregar bordes redondeados */
-    .carousel-inner {
-      border-radius: 15px;
-      overflow: hidden;
-    }
-
-    /* Estilo del contenedor para centrar el carrusel */
-    .carousel-container {
-      display: flex;
-      justify-content: center; /* Centra el carrusel horizontalmente */
-      align-items: center; /* Centra el carrusel verticalmente */
-      height: 400px; /* Ajusta la altura del contenedor */
-    }
-
-    .carousel {
-      width: 80%; /* Ajusta el tamaño del carrusel */
-      max-width: 700px; /* Tamaño máximo */
-    }
-  </style>
-
-<style>
-    /* Contenedor para los cuadros */
-    .container {
-      display: flex;
-      justify-content: center; /* Alinea los cuadros al centro */
-      gap: 20px; /* Espacio entre los cuadros */
-      padding: 20px;
-    }
-
-    /* Estilo de cada cuadro con imagen */
-    .square {
-      width: 200px; /* Ancho del cuadro */
-      height: 200px; /* Alto del cuadro */
-      background-color: #ccc; /* Fondo de respaldo en caso de que no haya imagen */
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra de los cuadros */
-      border-radius: 10px; /* Bordes redondeados */
-      overflow: hidden; /* Recorta la imagen que sobrepase el borde del cuadrado */
-    }
-
-    /* Estilo de las imágenes */
-    .square img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; /* Asegura que la imagen llene el cuadro sin distorsionarse */
-    }
-  </style>
-
-
+            .collaboration-item {
+                max-width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
-
-    
     <header>
         <!-- Navbar -->
         <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">AlleRoDi</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="/index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/info.html">Acerca de</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/proyects.html">Proyectos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/creative.html">Creativo</a>
-                  </li>
-                </ul>
-              </div>
+                <a class="navbar-brand" href="#">AlleRoDi</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/info.html">Acerca de</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/proyects.html">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/creative.html">Creativo</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </nav>
-          
-      
-        <script>
-          let prevScrollpos = window.pageYOffset;
-          const navbar = document.getElementById("navbar");
-      
-          window.onscroll = function () {
-            const currentScrollPos = window.pageYOffset;
-            if (currentScrollPos <= 0) {
-              // Siempre muestra el navbar al estar al principio de la página
-              navbar.style.top = "0";
-            } else if (prevScrollpos > currentScrollPos) {
-              // Muestra el navbar al hacer scroll hacia arriba
-              navbar.style.top = "0";
-            } else {
-              // Esconde el navbar al hacer scroll hacia abajo
-              navbar.style.top = "-70px";
-            }
-            prevScrollpos = currentScrollPos;
-          };
-        </script>
-      </header>
-
-
+        </nav>
+    </header>
 
     <!-- Header Image -->
     <div class="header-container">
         <img src="image/yo2.jpg" alt="Header Image" class="header-image">
         <div class="name-overlay">
-          <h1>AlleRoDI</h1>
+            <h1>AlleRoDI</h1>
         </div>
-      </div>
-        
-      
+    </div>
 
-        <div class="minimalist-section">
-            <img class="minimalist-image" src="image/yo3.jpg" alt="Minimalist Image">
-            <div class="minimalist-text">
-                <p>Soy Alejandro, artista, diseñador gráfico y programador apasionado por crear experiencias visuales y digitales. Combino creatividad y tecnología para desarrollar diseños únicos, páginas web, aplicaciones y videojuegos. Mi objetivo es dar vida a ideas innovadoras y conectar con las personas a través del arte y la funcionalidad.
+    <!-- Minimalist Section -->
+    <div class="minimalist-section">
+        <img class="minimalist-image" src="image/yo3.jpg" alt="Minimalist Image">
+        <div class="minimalist-text">
+            <p>Soy Alejandro, artista, diseñador gráfico y programador apasionado por crear experiencias visuales y digitales. Combino creatividad y tecnología para desarrollar diseños únicos, páginas web, aplicaciones y videojuegos. Mi objetivo es dar vida a ideas innovadoras y conectar con las personas a través del arte y la funcionalidad.</p>
+            <div class="button-container">
+                <button class="minimalist-button">Ver más</button>
+            </div>
+        </div>
+    </div>
 
-                </p>
-                <div class="button-container">
-                    <button class="minimalist-button">Ver más</button>
+    <!-- Minimalist Section 2 -->
+    <div class="minimalist-section-2">
+        <img class="minimalist-image-2" src="/personaje/Albums.png" alt="Minimalist Image">
+        <div class="minimalist-text-2">
+            <p>Estoy trabajando en la creación de música, especialmente en géneros como el disco y el Happy Hardcore, pero quiero llevar esto más allá. Mi objetivo es explorar nuevos sonidos, mezclar estilos y encontrar una identidad única en mis composiciones. Me apasiona experimentar con sintetizadores, efectos y diferentes técnicas de producción para crear algo fresco y emocionante.</p>
+            <div class="button-container">
+                <button class="minimalist-button">Ver más</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Info Section Reverse -->
+    <section class="info-section-reverse d-flex align-items-center justify-content-center">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-3 col-md-4 col-6 text-center">
+                    <div class="info-content">
+                        <img src="/personaje/personaje.png" alt="Descripción de la imagen" class="img-fluid mb-4">
+                        <h2>Personaje</h2>
+                        <p>Aquí puedes ver el personaje principal, diseñado con un estilo único y lleno de detalles interesantes.</p>
+                        <a href="#" class="btn btn-llamativo btn-lg mt-3">Ver</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 text-center">
+                    <div class="info-content">
+                        <img src="/personaje/Albums.png" alt="Descripción de la imagen" class="img-fluid mb-4">
+                        <h2>Música</h2>
+                        <p>Explora nuestra colección musical y descubre sonidos únicos que complementan este proyecto.</p>
+                        <a href="#" class="btn btn-llamativo btn-lg mt-3">Ver</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 text-center">
+                    <div class="info-content">
+                        <img src="/personaje/Fotos.png" alt="Descripción de la imagen" class="img-fluid mb-4">
+                        <h2>Galería</h2>
+                        <p>Descubre imágenes increíbles y diseños visuales que dan vida a nuestra visión creativa.</p>
+                        <a href="#" class="btn btn-llamativo btn-lg mt-3">Ver</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 text-center">
+                    <div class="info-content">
+                        <img src="/personaje/Proyectos.png" alt="Descripción de la imagen" class="img-fluid mb-4">
+                        <h2>Proyectos</h2>
+                        <p>Conoce los proyectos en los que estamos trabajando para ofrecerte innovación y creatividad.</p>
+                        <a href="#" class="btn btn-llamativo btn-lg mt-3">Ver</a>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
 
-
-
-        <div class="minimalist-section-2">
-            <img class="minimalist-image-2" src="/personaje/Albums.png" alt="Minimalist Image">
-            <div class="minimalist-text-2">
-                <p>Estoy trabajando en la creación de música, especialmente en géneros como el disco y el Happy Hardcore, pero quiero llevar esto más allá. Mi objetivo es explorar nuevos sonidos, mezclar estilos y encontrar una identidad única en mis composiciones. Me apasiona experimentar con sintetizadores, efectos y diferentes técnicas de producción para crear algo fresco y emocionante.
-                </p>
-                <div class="button-container">
-                    <button class="minimalist-button">Ver más</button>
-                </div>
+    <!-- Minimalist Section 2 -->
+    <div class="minimalist-section-2">
+        <img class="minimalist-image-2" src="/personaje/Fotos.png" alt="Minimalist Image">
+        <div class="minimalist-text-2">
+            <p>Aquí te muestro algunos de mis trabajos fotográficos. Cada imagen refleja una parte de mi estilo y enfoque en la fotografía.</p>
+            <div class="button-container">
+                <button class="minimalist-button">Ver más</button>
             </div>
         </div>
-
- 
-
-  <!-- Info Section Reverse -->
-  <section class="info-section-reverse d-flex align-items-center justify-content-center">
-    <div class="container">
-      <div class="row d-flex justify-content-center">
-        <div class="col-lg-3 col-md-4 col-6 text-center">
-          <div class="info-content">
-            <img src="/personaje/personaje.png" alt="Descripción de la imagen" class="img-fluid mb-4">
-            <h2>Personaje</h2>
-            <p>Aquí puedes ver el personaje principal, diseñado con un estilo único y lleno de detalles interesantes.</p>
-            <a href="#" class="btn btn-llamativo btn-lg mt-3">Ver</a>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6 text-center">
-          <div class="info-content">
-            <img src="/personaje/Albums.png" alt="Descripción de la imagen" class="img-fluid mb-4">
-            <h2>Música</h2>
-            <p>Explora nuestra colección musical y descubre sonidos únicos que complementan este proyecto.</p>
-            <a href="#" class="btn btn-llamativo btn-lg mt-3">Ver</a>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6 text-center">
-          <div class="info-content">
-            <img src="/personaje/Fotos.png" alt="Descripción de la imagen" class="img-fluid mb-4">
-            <h2>Galería</h2>
-            <p>Descubre imágenes increíbles y diseños visuales que dan vida a nuestra visión creativa.</p>
-            <a href="#" class="btn btn-llamativo btn-lg mt-3">Ver</a>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6 text-center">
-          <div class="info-content">
-            <img src="/personaje/Proyectos.png" alt="Descripción de la imagen" class="img-fluid mb-4">
-            <h2>Proyectos</h2>
-            <p>Conoce los proyectos en los que estamos trabajando para ofrecerte innovación y creatividad.</p>
-            <a href="#" class="btn btn-llamativo btn-lg mt-3">Ver</a>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
 
-  <div class="minimalist-section-2">
-    <img class="minimalist-image-2" src="/personaje/Fotos.png" alt="Minimalist Image">
-    <div class="minimalist-text-2">
-        <p>Aquí te muestro algunos de mis trabajos fotográficos. Cada imagen refleja una parte de mi estilo y enfoque en la fotografía.
-        </p>
-        <div class="button-container">
-            <button class="minimalist-button">Ver más</button>
+    <!-- Minimalist Section 2 -->
+    <div class="minimalist-section-2">
+        <img class="minimalist-image-2" src="/personaje/Proyectos.png" alt="Minimalist Image">
+        <div class="minimalist-text-2">
+            <p>Estoy desarrollando aplicaciones innovadoras como MatchMake, utilizo inteligencia artificial. Además, trabajo en un videojuego interactivo con poderes misteriosos, buscando siempre ofrecer experiencias únicas. Mi interés por la inteligencia artificial me lleva a integrarla en cada proyecto. Desde recomendaciones inteligentes hasta interfaces interactivas, la IA permite personalizar y optimizar la experiencia del usuario, haciendo que mis aplicaciones sean más eficientes y atractivas. Estoy emocionado por explorar cómo la IA puede mejorar la funcionalidad y la interacción en el futuro de mis creaciones.</p>
+            <div class="button-container">
+                <button class="minimalist-button">Ver más</button>
+            </div>
         </div>
     </div>
-</div>
 
+    <!-- Footer -->
+    <footer class="decoration-of-licencia">
+        <p>@licencia de <a href="https://www.ejemplo.com" target="_blank">AlleRoDi</a></p>
+    </footer>
 
-<div class="container">
-    <div class="square">
-      <img src="/image/IMG_4568.jpeg" alt="Imagen 1">
-    </div>
-    <div class="square">
-      <img src="/image/ImHappy.png" alt="Imagen 2">
-    </div>
-    <div class="square">
-      <img src="/image/aledev-asset.jpg" alt="Imagen 3">
-    </div>
-  </div>
-
-
-
-  <!-- Minimalist Section 2 -->
-  <div class="minimalist-section-2">
-    <img class="minimalist-image-2" src="/personaje/Proyectos.png" alt="Minimalist Image">
-    <div class="minimalist-text-2">
-      <p>Estoy desarrollando aplicaciones innovadoras como MatchMake, utilizo inteligencia artificial. Además, trabajo en un videojuego interactivo con poderes misteriosos, buscando siempre ofrecer experiencias únicas.
-
-        Mi interés por la inteligencia artificial me lleva a integrarla en cada proyecto. Desde recomendaciones inteligentes hasta interfaces interactivas, la IA permite personalizar y optimizar la experiencia del usuario, haciendo que mis aplicaciones sean más eficientes y atractivas. Estoy emocionado por explorar cómo la IA puede mejorar la funcionalidad y la interacción en el futuro de mis creaciones.</p>
-      <div class="button-container">
-        <button class="minimalist-button">Ver más</button>
-      </div>
-    </div>
-  </div>
-
-
-
-
-<footer class="decoration-of-licencia">
-    <p>@licencia de <a href="https://www.ejemplo.com" target="_blank">AlleRoDi</a></p>
-</footer>
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
 </html>
